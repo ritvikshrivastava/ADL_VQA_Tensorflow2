@@ -1,5 +1,5 @@
-# Visual Question Answering
-Submission for Applied Deep Learning VQA
+# Visual Question Answering in TensorFlow 2
+Submission for Applied Deep Learning Course Project
 
 To  run:
 
