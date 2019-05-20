@@ -1,8 +1,6 @@
 from all_imports import *
 
 
-
-
 loss_function = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True) #Sparse
 optimizer = tf.keras.optimizers.Adam()
 train_loss_metric = tf.keras.metrics.Mean(name='train_loss')

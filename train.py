@@ -38,7 +38,7 @@ if __name__=="__main__":
   else:
     print("The directory you provided does not exist")
     exit()
-  model.save_weights("models/parallel_coattention/epoch_"+str(-1)+".h5")
+  model.save_weights(str(args.save_path+"/"+str(-1)+".h5")
   for epoch in range(EPOCHS):
     for (batch, (img_tensor, question, answer)) in enumerate(dataset):
         train_step(img_tensor, question, answer ,model)
@@ -57,4 +57,4 @@ if __name__=="__main__":
                         test_loss_metric.result(), 
                          test_accuracy_metric.result() * 100))
   if epoch  % 10 == 0:
-    model.save_weights(str(args.save_path+"/"+str+str(epoch)+".h5"))
+    model.save_weights(str(args.save_path+"/"+str(epoch)+".h5"))
