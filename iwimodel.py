@@ -4,6 +4,7 @@ This model uses the image twice. First it treats the image as a word in the ques
 But this will cause the image to be weighted less as it is treated ~ 1/20th of the question vector
 We therefore concatenate the image features from the CNN to the output of the LSTM again to extract more information.
 '''
+
 import tensorflow as tf
 class IWIModel(tf.keras.Model):
     

@@ -5,7 +5,7 @@ from iwimodel import IWIModel
 from alternatingcoattentionmodel import AlternatingCoattentionModel
 import argparse
 
-from get_data import get_data
+from get_d_copy import get_data
 
 if __name__=="__main__":
   parser = argparse.ArgumentParser()
